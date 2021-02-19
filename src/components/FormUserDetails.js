@@ -15,6 +15,7 @@ export class FormUserDetails extends Component {
       <MuiThemeProvider>
         <Fragment>
           <AppBar title="Enter User Details"/>
+          <div style={styles.container}>
           <TextField 
           hintText="Enter Your First Name" 
           floatingLabelText="First Name" 
@@ -32,6 +33,8 @@ export class FormUserDetails extends Component {
           floatingLabelText="Email" 
           onChange={handleChange('email')}
           defaultValue={values.email}/>
+          <br/>
+          </div>
           <RaisedButton 
             label="Continue"
             primary={true}
@@ -46,7 +49,10 @@ export class FormUserDetails extends Component {
 
 const styles = {
   button: {
-    margin: 15
+    margin: '2rem'
+  },
+  container: {
+    padding: '2rem'
   }
 }
 

@@ -20,7 +20,7 @@ export class Confirm extends Component {
       <MuiThemeProvider>
         <Fragment>
           <AppBar title="Confirm User Data"/>
-          <List>
+          <List style={styles.container}>
             <ListItem 
               primaryText="First Name"
               secondaryText={ firstName }
@@ -46,13 +46,13 @@ export class Confirm extends Component {
               secondaryText={ bio }
             />
           </List>
-          
           <RaisedButton 
             label="Confirm & Continue"
             primary={true}
             style={styles.button}
             onClick={this.continue}
           />
+          <br/>
           <RaisedButton 
             label="Back"
             primary={false}
@@ -67,7 +67,10 @@ export class Confirm extends Component {
 
 const styles = {
   button: {
-    margin: 15
+    margin: '1rem 2rem'
+  },
+  container: {
+    padding: '2rem'
   }
 }
 

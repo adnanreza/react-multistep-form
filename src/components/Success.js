@@ -9,13 +9,21 @@ export class Success extends Component {
       <MuiThemeProvider>
         <Fragment>
           <AppBar title="Success"/>
-          <h1>Thank you for your submission</h1>
-          <p>You will receive an email confirming your submission.</p>
+          <div style={styles.container}>
+            <h1>Thank you for your submission</h1>
+            <p>You will receive an email confirming your submission.</p>
+          </div>
         </Fragment>
       </MuiThemeProvider>
     )
   }
 }
 
+
+const styles = {
+  container: {
+    padding: '1rem 2rem'
+  }
+}
 
 export default Success
